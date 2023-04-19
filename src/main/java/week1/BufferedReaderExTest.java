@@ -7,6 +7,7 @@ public class BufferedReaderExTest {
 // BufferedReaderEx 선언 및 초기화
         BufferedReaderEx bufferedReaderEx = new BufferedReaderEx();
 // .readALine() 메소드 호출
-        bufferedReaderEx.readLine();
+        //bufferedReaderEx.readLine();
+        bufferedReaderEx.plusTwoNumbers();
     }
 }
