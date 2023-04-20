@@ -1,26 +1,43 @@
 plugins {
+<<<<<<< HEAD
   id 'java'
   id 'application'
   id 'org.javamodularity.moduleplugin' version '1.8.12'
   id 'org.openjfx.javafxplugin' version '0.0.13'
   id 'org.beryx.jlink' version '2.25.0'
+=======
+    id 'java'
+    id 'application'
+    id 'org.javamodularity.moduleplugin' version '1.8.12'
+    id 'org.openjfx.javafxplugin' version '0.0.13'
+    id 'org.beryx.jlink' version '2.25.0'
+>>>>>>> 30e52a8 (first commit)
 }
 
 group 'com.example'
 version '1.0-SNAPSHOT'
 
 repositories {
+<<<<<<< HEAD
   mavenCentral()
 }
 
 ext {
   junitVersion = '5.9.1'
+=======
+    mavenCentral()
+}
+
+ext {
+    junitVersion = '5.9.1'
+>>>>>>> 30e52a8 (first commit)
 }
 
 sourceCompatibility = '17'
 targetCompatibility = '17'
 
 tasks.withType(JavaCompile) {
+<<<<<<< HEAD
   options.encoding = 'UTF-8'
 }
 
@@ -32,10 +49,24 @@ application {
 javafx {
   version = '17.0.2'
   modules = ['javafx.controls', 'javafx.fxml']
+=======
+    options.encoding = 'UTF-8'
+}
+
+application {
+    mainModule = 'com.example.project1'
+    mainClass = 'com.example.project1.HelloApplication'
+}
+
+javafx {
+    version = '17.0.2'
+    modules = ['javafx.controls', 'javafx.fxml']
+>>>>>>> 30e52a8 (first commit)
 }
 
 dependencies {
 
+<<<<<<< HEAD
   testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
   testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
 }
@@ -53,4 +84,24 @@ jlink {
 
 jlinkZip {
   group = 'distribution'
+=======
+    testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
+}
+
+test {
+    useJUnitPlatform()
+}
+
+jlink {
+    imageZip = project.file("${buildDir}/distributions/app-${javafx.platform.classifier}.zip")
+    options = ['--strip-debug', '--compress', '2', '--no-header-files', '--no-man-pages']
+    launcher {
+        name = 'app'
+    }
+}
+
+jlinkZip {
+    group = 'distribution'
+>>>>>>> 30e52a8 (first commit)
 }
