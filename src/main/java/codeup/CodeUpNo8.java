@@ -7,13 +7,13 @@ public class CodeUpNo8 {
                 {'\u251C', '\u253C', '\u2524'},
                 {'\u2514', '\u2534', '\u2518'}
         };
-        final StringBuilder sb = new StringBuilder();
+        StringBuilder sb = new StringBuilder();
         for(char[] cs : arr) {
             for (char c : cs) {
                 sb.append(c);
             }
             sb.append("\n");
         }
-        System.out.println(sb.toString());
+        System.out.println(sb);
     }
 }
