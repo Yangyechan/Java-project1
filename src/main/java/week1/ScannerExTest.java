@@ -2,7 +2,7 @@ package week1;
 
 public class ScannerExTest {
     public static void main(String[] args) {
-        ScaccerstrEx se = new ScaccerstrEx();
-        se.inputStringAndPlus();
+        ScannerEx2 se = new ScannerEx2();
+        se.inputTwoNumberAndPlus();
     }
 }
