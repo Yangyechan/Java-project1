@@ -18,5 +18,6 @@ public class SpaceInvadersMemberVariable {
         simv.moveRight();
         simv.moveRight();
         simv.moveRight();
+        System.out.println(simv.location);
     }
 }
