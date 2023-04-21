@@ -9,5 +9,6 @@ public class UserTest {
         System.out.println(user.name);
         System.out.println(user.phoneNumber);
         System.out.println(user.age);
+        System.out.printf("%s님은 성인입니까? %s\n", user.name, user.isAdult());
     }
 }
