@@ -13,13 +13,13 @@ public class TreasureMap {
     }
 
     public static class Solution {
-        public static String[] solution(int mapSize, int[] arr1, int[] arr2) {
+        public static String[] solution(int mapSize, int[] arr11, int[] arr22) {
             String[] answer = new String[mapSize];
 
             for(int i = 0; i < mapSize; i++) {
-                answer[i] = Integer.toBinaryString(arr1[i] | arr2[i]); // ex) answer[1]: "10101"
-                answer[i] = answer[i].replace('1', '#'); // ex) answer[1]: "#0#0#"
-                answer[i] = answer[i].replace('0', ' '); // ex) answer[1]: "# # #"
+                answer[i] = Integer.toBinaryString(arr11[i] | arr22[i]);
+                answer[i] = answer[i].replace('1', '#');
+                answer[i] = answer[i].replace('0', ' ');
             }
 
             return answer;
