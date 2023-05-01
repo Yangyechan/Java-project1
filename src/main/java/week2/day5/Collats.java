@@ -7,7 +7,7 @@ public class Collats {
         System.out.println(sl.solution(n));
     }
     public static class Solution {
-        public int solution(int num) {
+        public int solution(long num) {
             int answer = 0;
             while(num!=1) {
                 if(num%2==0) {
