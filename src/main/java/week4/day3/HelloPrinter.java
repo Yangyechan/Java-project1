@@ -25,6 +25,6 @@ public class HelloPrinter {
         //hp.print("hello");
         //hp.repeatMessage(5,"hi");
         hp2.repeatMessage(5,"Hello12");
-        hp2.repeatMessage(5,"Hello");
+        //hp2.repeatMessage(5,"Hello");
     }
 }
